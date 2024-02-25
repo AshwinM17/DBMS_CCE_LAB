@@ -1,0 +1,121 @@
+2)
+
+create or replace trigger driver_info
+after insert on participated
+for each row
+declare 
+id varchar(30);
+nam varchar(50);
+add varchar(100);
+begin
+select driver_id,name,address into id,nam,add
+from person
+where :new.driver_id=person.driver_id;
+dbms_output.put_line(' Driver_id:'||id||' Name:'||nam||' Address:'||add);
+end;
+/
+
+insert into accident values(32,'24-FEB-23','airport road,Delhi');
+insert into participated values('MT739023','DL05MO905',900,32);
+delete from participated where report_number=32;
+
+
+Driver_id:MT739023 Name:Vivaan V Address:A-23,Grand Living,Indiranagar,Delhi
+
+
+
+3)
+
+create or replace function total_accd
+(year in int)
+return int
+as
+total int;
+begin
+select count(report_number)
+into total
+from accident
+where extract(year from accd_date)=year;
+return total;
+end;
+/
+
+select total_accd(2019) from dual;
+TOTAL_ACCD(2019)
+----------------
+               2
+
+4)
+set serveroutput on
+create or replace procedure tot_damage
+(driver in varchar,year in int) is
+damage int;
+begin 
+select sum(damage_amount) into damage
+ from participated pa natural join accident ac 
+ where pa.driver_id = driver and extract(year from ac.accd_date) = year;
+dbms_output.put_line('Total damage:'|| damage);
+end;
+/
+
+execute tot_damage('MT739023',2019);
+
+Total damage:100900
+
+PL/SQL procedure successfully completed.
+
+5)
+set serveroutput on
+create or replace procedure accident_info(location_value in varchar) IS
+begin
+    for accident_rec in 
+	(select * from accident where location = location_value) loop
+        dbms_output.put_line('Report Number: ' || accident_rec.report_number || ', Date: ' || accident_rec.accd_date || ', Location: ' || accident_rec.location);
+   end loop;
+end;
+/
+
+execute accident_info('airport road,Delhi');
+
+Report Number: 32, Date: 24-FEB-23, Location: airport road,Delhi
+Report Number: 12, Date: 24-FEB-19, Location: airport road,Delhi
+
+PL/SQL procedure successfully completed.
+
+
+Extra
+
+1)
+create table T1(
+driver_id varchar(20),
+name varchar(30),
+address varchar(50),
+primary key(driver_id));
+
+create or replace procedure accident_info_exceeds() IS
+v_driver_id participated.driver_id%TYPE;
+    v_year accident.accd_date%TYPE;
+    v_total_damage NUMBER;
+begin
+	FOR driver_rec IN (SELECT DISTINCT driver_id FROM participated) LOOP
+        FOR year_rec IN (SELECT DISTINCT EXTRACT(YEAR FROM accd_date) AS year FROM accident) LOOP
+            -- Calculate the total damage amount for the current driver and year
+            SELECT SUM(pa.damage_amount)
+            INTO v_total_damage
+            FROM participated pa
+            JOIN accident ac ON pa.report_number = ac.report_number
+            WHERE pa.driver_id = driver_rec.driver_id
+            AND EXTRACT(YEAR FROM ac.accd_date) = year_rec.year;
+
+            -- Check if the total damage amount exceeds 50000
+            IF v_total_damage > 50000 THEN
+                -- Insert the person's information into table T1
+                INSERT INTO T1 (driver_id, year)
+                VALUES (driver_rec.driver_id, year_rec.year);
+                COMMIT;
+                DBMS_OUTPUT.PUT_LINE('Person inserted into table T1 due to exceeding damage limit. Driver ID: ' || driver_rec.driver_id || ', Year: ' || year_rec.year);
+            END IF;
+        END LOOP;
+    END LOOP;
+end;
+/

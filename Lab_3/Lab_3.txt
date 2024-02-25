@@ -103,7 +103,7 @@ DRIVER_ID#                     NAME            ADDRESS
 1238                           Rachit          Gujrat India
 
 SQL> update person
-  2  set address='Maharashtra India' where address='Baharashtra India';
+    set address='Maharashtra India' where address='Baharashtra India';
 
 
 SQL> select * from person;
@@ -212,15 +212,15 @@ DRIVER_ID#                     REGNO                REPORT_NUMBER DAMAGE_AMOUNT
 
 //4th part
 SQL> alter table Participated                                                                                          
-2  drop constraint fkey3paricipated; 
+  drop constraint fkey3paricipated; 
 Table altered.
 
 SQL>  alter table Participated
-  2  add constraint fkey3participated foreign key(report_number) references accident(report_number)
-  3  on delete cascade;
+    add constraint fkey3participated foreign key(report_number) references accident(report_number)
+    on delete cascade;
 
 SQL> delete from accident
-  2  where extract(year from accd_date)=1993;
+    where extract(year from accd_date)=1993;
 
 1 row deleted.
 
@@ -248,15 +248,15 @@ REPORT_NUMBER ACCD_DATE LOCATION
 
 //5th part
 SQL> alter table Participated                                                                                          
-2  drop constraint fkey3paricipated; 
+  drop constraint fkey3paricipated; 
 Table altered.
 
 SQL>  alter table Participated
-  2  add constraint fkey3participated foreign key(report_number) references accident(report_number)
-  3  on delete cascade;
+    add constraint fkey3participated foreign key(report_number) references accident(report_number)
+    on delete cascade;
 
 //6th part
 SQL> alter table participated
-  2  add constraint checkparticipated check(Damage_amount>=0);
+    add constraint checkparticipated check(Damage_amount>=0);
 
 Table altered.

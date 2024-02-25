@@ -386,3 +386,9 @@ U-Like                              1
 
 j)List the students who enrolled for all the books adopted by their course
 
+select distinct regno
+from enroll natural join student
+where exists
+(select book_isbn
+from book_adoption
+where book_adoption.course#=enroll.course#);
