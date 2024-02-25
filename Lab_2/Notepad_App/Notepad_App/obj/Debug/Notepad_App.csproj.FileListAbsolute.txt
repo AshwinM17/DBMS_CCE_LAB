@@ -1,0 +1,18 @@
+E:\220953594\Lab1\Calculator\Notepad_App\Notepad_App\bin\Debug\Notepad_App.exe.config
+E:\220953594\Lab1\Calculator\Notepad_App\Notepad_App\bin\Debug\Notepad_App.exe
+E:\220953594\Lab1\Calculator\Notepad_App\Notepad_App\bin\Debug\Notepad_App.pdb
+E:\220953594\Lab1\Calculator\Notepad_App\Notepad_App\obj\Debug\Notepad_App.Form1.resources
+E:\220953594\Lab1\Calculator\Notepad_App\Notepad_App\obj\Debug\Notepad_App.Properties.Resources.resources
+E:\220953594\Lab1\Calculator\Notepad_App\Notepad_App\obj\Debug\Notepad_App.csproj.GenerateResource.Cache
+E:\220953594\Lab1\Calculator\Notepad_App\Notepad_App\obj\Debug\Notepad_App.exe
+E:\220953594\Lab1\Calculator\Notepad_App\Notepad_App\obj\Debug\Notepad_App.pdb
+E:\220953594\Lab1\Calculator\Notepad_App\Notepad_App\obj\Debug\Notepad_App.AbtUs.resources
+E:\220953128\Lab_2\Notepad_App\Notepad_App\bin\Debug\Notepad_App.exe.config
+E:\220953128\Lab_2\Notepad_App\Notepad_App\obj\Debug\Notepad_App.exe
+E:\220953128\Lab_2\Notepad_App\Notepad_App\obj\Debug\Notepad_App.pdb
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\15-01-2024\220953128\Lab_2\Notepad_App\Notepad_App\obj\Debug\Notepad_App.csproj.AssemblyReference.cache
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\15-01-2024\220953128\Lab_2\Notepad_App\Notepad_App\obj\Debug\Notepad_App.exe
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\15-01-2024\220953128\Lab_2\Notepad_App\Notepad_App\obj\Debug\Notepad_App.pdb
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\26-01-2024\220953128\Lab_2\Notepad_App\Notepad_App\obj\Debug\Notepad_App.csproj.AssemblyReference.cache
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\26-01-2024\220953128\Lab_2\Notepad_App\Notepad_App\obj\Debug\Notepad_App.exe
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\26-01-2024\220953128\Lab_2\Notepad_App\Notepad_App\obj\Debug\Notepad_App.pdb

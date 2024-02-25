@@ -1,0 +1,262 @@
+Lab3:
+write in lab: all the create and alter tables 5 tuples each table,select statements and all the questions in which update and delete show after updation and deletion
+Q1) 
+
+SQL>create table PERSON(driver_id# varchar(30) primary key,name varchar(50),address varchar(100));
+Table created.
+
+SQL> select * from person;
+no rows selected
+
+SQL> desc person
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ DRIVER_ID#                                NOT NULL VARCHAR2(30)
+ NAME                                               VARCHAR2(50)
+ ADDRESS                                            VARCHAR2(100)
+
+
+SQL>create table CAR(regno varchar(20) primary key,model varchar(30),year int);
+Table created.
+SQL> desc car
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ REGNO                                     NOT NULL VARCHAR2(20)
+ MODEL                                              VARCHAR2(30)
+ YEAR                                               NUMBER(38)
+
+
+
+SQL>create table ACCIDENT (report_number int, accd_date date, location varchar(50));
+Table created.
+SQL> desc ACCIDENT;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ REPORT_NUMBER                                      NUMBER(38)
+ ACCD_DATE                                          DATE
+ LOCATION                                           VARCHAR2(50)
+SQL> alter table accident add constraint pkey primary key(report_number);
+
+Table altered.
+
+SQL> desc ACCIDENT;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ REPORT_NUMBER                             NOT NULL NUMBER(38)
+ ACCD_DATE                                          DATE
+ LOCATION                                           VARCHAR2(50)
+
+
+SQL>create table OWNS (driver_id# varchar(30),regno varchar(20),primary key(driver_id#,regno),constraint fkey1 foreign key(driver_id#)references PERSON (driver_id#),constraint fkey2 foreign key(regno)references CAR);
+Table created.
+SQL> desc owns
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ DRIVER_ID#                                NOT NULL VARCHAR2(30)
+ REGNO                                     NOT NULL VARCHAR2(20)
+
+
+SQL> select table_name from user_tables;
+
+TABLE_NAME
+--------------------------------------------------------------------------------
+PERSON
+CAR
+ACCIDENT
+OWNS
+
+
+SQL> create table PARTICIPATED (driver_id# varchar(30), regno varchar(20), report_number int, damage_amount int, primary key(driver_id#,regno,report_number),constraint fkey1participated foreign key(driver_id#) references Person(driver_id#),constraint fkey2participated foreign key(regno) references car(regno),constraint fkey3paricipated foreign key(report_number) references accident);
+Table created.
+SQL> desc participated
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ DRIVER_ID#                                NOT NULL VARCHAR2(30)
+ REGNO                                     NOT NULL VARCHAR2(20)
+ REPORT_NUMBER                             NOT NULL NUMBER(38)
+ DAMAGE_AMOUNT                                      NUMBER(38)
+
+
+//2nd part
+
+insert into person values(1234,'Rohan','Delhi India');
+insert into person values(1235,'Rohit','Banglalore India');
+insert into person values(1236,'Ramesh','Baharashtra India');
+insert into person values(1237,'Raghav','Daman and Diu India');
+
+SQL> insert into person values(1237,'Rachit','Gujrat India');
+insert into person values(1237,'Rachit','Gujrat India')
+*
+ERROR at line 1:
+ORA-00001: unique constraint (CCE128.SYS_C0038475) violated
+
+SQL> insert into person values(1238,'Rachit','Gujrat India');
+
+
+SQL> select * from person;
+DRIVER_ID#                     NAME            ADDRESS
+------------------------------ --------------- ------------------------------
+1234                           Rohan           Delhi India
+1235                           Rohit           Banglalore India
+1236                           Ramesh          Baharashtra India
+1237                           Raghav          Daman and Diu India
+1238                           Rachit          Gujrat India
+
+SQL> update person
+  2  set address='Maharashtra India' where address='Baharashtra India';
+
+
+SQL> select * from person;
+DRIVER_ID#                     NAME            ADDRESS
+------------------------------ --------------- ------------------------------
+1234                           Rohan           Delhi India
+1235                           Rohit           Banglalore India
+1236                           Ramesh          Maharashtra India
+1237                           Raghav          Daman and Diu India
+1238                           Rachit          Gujrat India
+
+//we had to alter using modify keyword and reduce the size of the varchar so that it becomes viewable in a single page
+
+insert into car values('ABCD0001','Celtos',3);
+insert into car values('EFGH2001','Ferrari',32);
+insert into car values('DSDS0001','Urus',5);
+insert into car values('ABCD4001','Honda City',1);
+insert into car values('HFSP5601','mini cooper',7);
+
+SQL> select * from car;
+
+REGNO                MODEL                                YEAR
+-------------------- ------------------------------ ----------
+ABCD0001             Celtos                                  3
+EFGH2001             Ferrari                                32
+DSDS0001             Urus                                    5
+ABCD4001             Honda City                              1
+HFSP5601             mini cooper                             7
+
+
+insert into accident values(0001,'01-Jan-2024','Delhi India');
+insert into accident values(0002,To_Date('2024-01-01','yyyy-mm-dd'),'Goa India');
+insert into accident values(0003,'29-feb-2023',' India');//will give error as 29 feb 2023 desnt exist
+insert into accident values(0003,'29-feb-2024',' India');
+insert into accident values(0004,'11-Oct-1993',' Daman and Diu India');
+insert into accident values(0005,'31-march-2200',' Gujrat India');
+insert into accident values(12,'17-july-2900',' karnataka India');
+SQL> select * from accident;
+
+REPORT_NUMBER ACCD_DATE LOCATION
+------------- --------- --------------------------------------------------
+            1 01-JAN-24 Delhi India
+            2 01-JAN-24 Goa India
+            3 29-FEB-24  India
+            4 11-OCT-93  Daman and Diu Indiase
+            5 31-MAR-00  Gujrat India
+           12 17-JUL-00  karnataka India
+insert into owns values(1234,'ABCD0001');
+insert into owns values(1235,'EFGH2001');
+insert into owns values(1236,'DSDS0001');
+insert into owns values(1237,'ABCD4001');
+insert into owns values(1238,'HFSP5601');
+SQL> select * from owns;
+
+DRIVER_ID#                     REGNO
+------------------------------ --------------------
+1234                           ABCD0001
+1235                           EFGH2001
+1236                           DSDS0001
+1237                           ABCD4001
+1238                           HFSP5601
+1237                           HFSP5601
+
+6 rows selected.
+
+
+insert into participated values(1234,'ABCD0001',1,10000);
+insert into participated  values(1235,'EFGH2001',2,0);
+insert into participated  values(1236,'DSDS0001',3,150);
+insert into participated  values(1237,'ABCD4001',4,799);
+insert into participated  values(1238,'HFSP5601',5,1500);
+insert into participated  values(1238,'HFSP5601',12,95500);
+
+SQL> select * from participated;
+
+DRIVER_ID#                     REGNO                REPORT_NUMBER DAMAGE_AMOUNT
+------------------------------ -------------------- ------------- -------------
+1234                           ABCD0001                         1         10000
+1236                           DSDS0001                         3           150
+1237                           ABCD4001                         4           799
+1238                           HFSP5601                         5          1500
+1235                           EFGH2001                         2             0
+1238                           HFSP5601                        12         95500
+
+//3rd part
+SQL> update participated set damage_amount=25000 where regno='HFSP5601' and report_number=12;
+
+1 row updated.
+
+SQL> update participated set damage_amount=25000 where regno='ABCD0001' and report_number=12;
+
+0 rows updated.
+
+SQL> select * from participated;
+
+DRIVER_ID#                     REGNO                REPORT_NUMBER DAMAGE_AMOUNT
+------------------------------ -------------------- ------------- -------------
+1234                           ABCD0001                         1         10000
+1236                           DSDS0001                         3           150
+1237                           ABCD4001                         4           799
+1238                           HFSP5601                         5          1500
+1235                           EFGH2001                         2             0
+1238                           HFSP5601                        12         25000
+
+6 rows selected.
+
+//4th part
+SQL> alter table Participated                                                                                          
+2  drop constraint fkey3paricipated; 
+Table altered.
+
+SQL>  alter table Participated
+  2  add constraint fkey3participated foreign key(report_number) references accident(report_number)
+  3  on delete cascade;
+
+SQL> delete from accident
+  2  where extract(year from accd_date)=1993;
+
+1 row deleted.
+
+SQL> select * from participated;
+
+DRIVER_ID#                     REGNO                REPORT_NUMBER DAMAGE_AMOUNT
+------------------------------ -------------------- ------------- -------------
+1234                           ABCD0001                         1         10000
+1236                           DSDS0001                         3           150
+1238                           HFSP5601                         5          1500
+1235                           EFGH2001                         2             0
+1238                           HFSP5601                        12         25000
+
+SQL> select * from accident;
+
+REPORT_NUMBER ACCD_DATE LOCATION
+------------- --------- --------------------------------------------------
+            1 01-JAN-24 Delhi India
+            2 01-JAN-24 Goa India
+            3 29-FEB-24  India
+            5 31-MAR-00  Gujrat India
+           12 17-JUL-00  karnataka India
+
+(Data with year 1993 deleted)
+
+//5th part
+SQL> alter table Participated                                                                                          
+2  drop constraint fkey3paricipated; 
+Table altered.
+
+SQL>  alter table Participated
+  2  add constraint fkey3participated foreign key(report_number) references accident(report_number)
+  3  on delete cascade;
+
+//6th part
+SQL> alter table participated
+  2  add constraint checkparticipated check(Damage_amount>=0);
+
+Table altered.

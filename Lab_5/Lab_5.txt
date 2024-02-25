@@ -1,0 +1,387 @@
+//Table creation
+
+SQL> create table STUDENT(regno varchar(20),name varchar(50),major varchar(20),bdate date,constraint pkeySTUDENT primary key(regno));
+
+Table created.
+
+SQL> desc student;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ REGNO                                     NOT NULL VARCHAR2(20)
+ NAME                                               VARCHAR2(50)
+ MAJOR                                              VARCHAR2(20)
+ BDATE                                              DATE
+
+
+SQL> create table COURSE(course# int,cname varchar(30),dept varchar(30));
+//added primary
+Table created.
+
+SQL> desc course;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ COURSE#                                            NUMBER(38)
+ CNAME                                              VARCHAR2(30)
+ DEPT                                               VARCHAR2(30)
+
+SQL> create table ENROLL(regno varchar(20),course# int,sem int,primary key(regno,course#),constraint fkey1course foreign key(regno) references Student(regno),constraint fkey2course foreign key(course#) references COURSE(course#));
+//wrong fkey names should have been correct
+Table created.
+
+SQL> desc enroll;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ REGNO                                     NOT NULL VARCHAR2(20)
+ COURSE#                                   NOT NULL NUMBER(38)
+ SEM                                                NUMBER(38)
+
+//sem is not fkey as it is not the same sem as above and sem is not a primary key anywhere
+SQL>create table BOOK_ADOPTION(course# int,sem int,book_isbn int,primary key(course#,book_isbn),constraint fkey1book_adoption foreign key(course#)references course(course#));
+
+Table created.
+SQL> alter table enroll add book_isbn int;
+
+Table altered.
+
+SQL> create table text(book_isbn int primary key,booktitle varchar(20),publisher varchar(50),author varchar(50));
+
+Table created.
+ 
+SQL>alter table enroll add constraint fkey3enroll foreign key(book_isbn) references text(book_isbn);
+
+Table altered.
+SQL> alter table BOOK_ADOPTION add constraint fkey2book_adoption foreign key(book_isbn) references text(book_isbn);
+
+Table altered.
+
+
+SQL> desc enroll;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ REGNO                                     NOT NULL VARCHAR2(20)
+ COURSE#                                   NOT NULL NUMBER(38)
+ SEM                                                NUMBER(38)
+ BOOK_ISBN                                          NUMBER(38)
+
+SQL> desc book_adoption;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ COURSE#                                   NOT NULL NUMBER(38)
+ SEM                                                NUMBER(38)
+ BOOK_ISBN                                 NOT NULL NUMBER(38)
+
+SQL> desc text;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ BOOK_ISBN                                 NOT NULL NUMBER(38)
+ BOOKTITLE                                          VARCHAR2(20)
+ PUBLISHER                                          VARCHAR2(50)
+ AUTHOR                                             VARCHAR2(50)
+
+
+
+//1)insertion in student
+insert into student values('123','Ashwin','CCE','17-oct-2003');
+insert into student values('456','Yogesh','CCE','17-sep-2004');
+insert into student values('789','Prakhar','Environment','01-jan-2023');
+insert into student values('101','Anushri','Environment','23-sep-2004');
+insert into student values('567','Panga','CSE','07-dec-2003');
+insert into student values('890','Pragya','CSE','25-feb-2004');
+insert into student values('234','Vansh','CCE','12-feb-2024');
+//vansh is not enrolled anywhere
+
+//2)insertion in course
+insert into course values(1101,'DBMS','ICT');
+insert into course values(1102,'DAA','ICT');
+insert into course values(2201,'COA','CS');
+insert into course values(2202,'DSD','CS');
+insert into course values(3301,'MATH','EVS');
+insert into course values(3302,'POETRY','EVS');
+insert into course values(3303,'Random','EVS');
+
+//4)insertion in Enroll
+insert into enroll values('123',1101,1,1234);
+insert into enroll values('123',1102,2,5678);
+insert into enroll values('456',1101,3,4123);
+insert into enroll values('456',2201,4,9012);
+insert into enroll values('789',3301,5,7890);
+insert into enroll values('789',3302,6,1123);
+insert into enroll values('101',3302,7,7890);
+insert into enroll values('567',2201,8,9012);
+insert into enroll values('890',2202,1,3456);
+
+//5)insert into Book_Adoption
+insert into Book_adoption values(1101,1,1234);
+insert into Book_adoption values(1102,2,4123);
+insert into Book_adoption values(1102,2,5678);
+insert into Book_adoption values(2201,3,9012);
+insert into Book_adoption values(2202,4,3456);
+insert into Book_adoption values(3301,5,7890);
+insert into Book_adoption values(3302,6,1123);
+insert into Book_adoption values(3303,7,8901);//book adopted but not taken by a student;
+
+//3)insert into Text
+insert into text values(1234,'DBMS vol 1','Pearson','SS');
+insert into text values(4123,'DBMS vol 2','Pearson','SS');
+insert into text values(5678,'DAA vol 2','Pearson','Ramanujan');
+insert into text values(9012,'COA vol 666','Cengage','Satan');
+insert into text values(3456,'DSD vol 99','Penguin','Panda');
+insert into text values(7890,'Math vol 66','U-Like','R S Aggrwal');
+insert into text values(1123,'Poetry vol 0','OML','Yahya Bootwaala');
+
+insert into text values(8901,'Random vol 66','Classmate','R D Sharma');//book adopted but not taken by a student;
+
+//resizing the tables to fit
+alter table student modify name varchar(20);
+alter table student modify regno varchar(10);
+alter table text modify (booktitle varchar(20),publisher varchar(20),author varchar(20));
+
+SQL> select * from student;
+
+REGNO      NAME                 MAJOR                BDATE
+---------- -------------------- -------------------- ---------
+123        Ashwin               CCE                  17-OCT-03
+456        Yogesh               CCE                  17-SEP-04
+789        Prakhar              Environment          01-JAN-23
+101        Anushri              Environment          23-SEP-04
+567        Panga                CSE                  07-DEC-03
+890        Pragya               CSE                  25-FEB-04
+234        Vansh                CCE                  12-FEB-24
+
+7 rows selected.
+
+SQL> select * from course;
+
+   COURSE# CNAME                          DEPT
+---------- ------------------------------ ------------------------------
+      1101 DBMS                           ICT
+      1102 DAA                            ICT
+      2201 COA                            CS
+      2202 DSD                            CS
+      3301 MATH                           EVS
+      3302 POETRY                         EVS
+      3303 Random                         EVS
+
+7 rows selected.
+
+SQL> select * from Enroll;
+
+REGNO                   COURSE#        SEM  BOOK_ISBN
+-------------------- ---------- ---------- ----------
+123                        1101          1       1234
+123                        1102          2       5678
+456                        1101          3       4123
+456                        2201          4       9012
+789                        3301          5       7890
+789                        3302          6       1123
+101                        3302          7       7890
+567                        2201          8       9012
+890                        2202          1       3456
+
+9 rows selected.
+
+SQL> select * from Book_Adoption;
+
+   COURSE#        SEM  BOOK_ISBN
+---------- ---------- ----------
+      1101          1       1234
+      1102          2       5678
+      2201          3       9012
+      2202          4       3456
+      3301          5       7890
+      3302          6       1123
+      3303          7       8901
+      1102          2       4123
+
+8 rows selected.
+
+SQL> select * from text;
+
+ BOOK_ISBN BOOKTITLE            PUBLISHER            AUTHOR
+---------- -------------------- -------------------- --------------------
+      1234 DBMS vol 1           Pearson              SS
+      4123 DBMS vol 2           Pearson              SS
+      5678 DAA vol 2            Pearson              Ramanujan
+      9012 COA vol 666          Cengage              Satan
+      3456 DSD vol 99           Penguin              Panda
+      7890 Math vol 66          U-Like               R S Aggrwal
+      1123 Poetry vol 0         OML                  Yahya Bootwaala
+      8901 Random vol 66        Classmate            R D Sharma
+
+8 rows selected.
+//update for e part
+SQL> update text
+    set publisher='Cengage'
+    where publisher='U-Like';
+
+iii)
+a)List the courses which uses more than 1 text book.
+
+SQL> select cname,count(course#) as num_of_Text_Books
+  2  from course natural join book_adoption
+  3  group by cname
+  4  having count(course#) > 1;
+
+CNAME                          NUM_OF_TEXT_BOOKS
+------------------------------ -----------------
+DAA                                            2
+
+b)List the departments whose all course text books are published by a particular publisher.
+select distinct dept
+from course
+where not exists(
+select *
+from text natural join book_adoption
+where book_adoption.course# = course.course#
+and publisher!='Pearson');
+
+DEPT
+------------------------------
+ICT
+
+//check once
+
+c)find the students who have enrolled for course of more than one department
+select name
+from student
+where regno in(
+select regno 
+from enroll natural join course
+group by regno
+having count(distinct dept)>1);
+
+NAME
+--------------------
+Yogesh
+
+//for understanding
+select regno,count(distinct dept)
+from enroll natural join course
+group by regno;
+SQL> select regno,count(distinct dept)
+  2  from enroll natural join course
+  3  group by regno;
+
+REGNO                COUNT(DISTINCTDEPT)
+-------------------- -------------------
+456                                    2
+101                                    1
+890                                    1
+567                                    1
+123                                    1
+789                                    1
+
+d)Produce a list of students who are not enrolled.
+select regno,name
+from student
+where regno not in(
+select regno from enroll);
+
+or 
+
+select regno,name
+from student
+where not exists(
+select regno from enroll
+where student.regno=enroll.regno);
+
+REGNO      NAME
+---------- --------------------
+234        Vansh
+
+
+e)List the department which adopts all the books from the particular publisher.
+maybe wrong
+also update the table
+ select distinct dept
+    from course natural join Book_Adoption
+    where book_isbn not in
+    (select book_isbn
+    from course natural join book_adoption join text using(book_isbn)
+    where publisher !='Pearson'
+    );
+DEPT
+------------------------------
+ICT
+error when we use 
+
+  select distinct dept
+    from course 
+    where not exists
+    (
+	select *
+	from book_adoption natural join text 
+	where publisher !='Cengage'
+	and course.course# =book_adoption.course#
+    );
+
+f)List the books which are adopted by the course as well as enrolled by the student.
+select booktitle 
+from text
+where book_isbn in
+(
+	select distinct book_isbn
+from book_adoption join enroll using(book_isbn)
+); 
+//we had join not left or right join as they would'nt eleiminate the null(ie if not adopted or not enrolled)
+BOOKTITLE
+--------------------
+Poetry vol 0
+DBMS vol 1
+DSD vol 99
+DBMS vol 2
+DAA vol 2
+Math vol 66
+COA vol 666
+
+7 rows selected.
+// ie random waala nahi aaya
+
+
+g)List the courses which has adapted at least two books from a specific publisher.
+
+select course#,cname 
+from text natural join book_adoption join course using(course#)
+where publisher='Pearson'
+group by (course#,cname)
+having count(book_isbn)>=2;
+
+h)Identify the students who are enrolled for maximum number of books.
+
+select regno,name,count(book_isbn)
+from enroll natural join student
+group by regno,name having count(book_isbn)>= all
+(select count(book_isbn)
+from enroll natural join student
+group by regno);
+
+REGNO      NAME                 COUNT(BOOK_ISBN)
+---------- -------------------- ----------------
+789        Prakhar                             2
+123        Ashwin                              2
+456        Yogesh                              2
+
+i)List the publishers along with the number of books published by them
+select publisher,count(book_isbn)
+from (select * from text)
+group by publisher;
+
+
+or
+
+
+select publisher,count(book_isbn)
+from text
+group by publisher;
+
+PUBLISHER            COUNT(BOOK_ISBN)
+-------------------- ----------------
+Penguin                             1
+Cengage                             1
+OML                                 1
+Pearson                             3
+Classmate                           1
+U-Like                              1
+
+j)List the students who enrolled for all the books adopted by their course
+

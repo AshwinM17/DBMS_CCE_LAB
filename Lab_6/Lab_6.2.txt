@@ -1,0 +1,8 @@
+Write a procedure which inserts Driver information into table T1,if the total damage amount nof that driver exceeds rupees 50,000.
+Q2)create a procedure to store accident details into diffrent tables based on accident location information,make use of cursor concept.(can keep 3-4 locations as filter)
+Q3)Generate a trigger intimating the driver regarding the accident if the number of accidents by the driver reaches the count of 3.
+//above 3 for program check not in record.
+
+
+Q4)Write a PLSQL function to withdraw money from a bank account.
+Q5)Create a procedure to display 20% discount amount on each order,provided the order has atleast 5 items.

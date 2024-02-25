@@ -1,0 +1,29 @@
+E:\220953128\Lab_1\calculator\calculator\bin\Debug\calculator.exe.config
+E:\220953128\Lab_1\calculator\calculator\bin\Debug\calculator.exe
+E:\220953128\Lab_1\calculator\calculator\bin\Debug\calculator.pdb
+E:\220953128\Lab_1\calculator\calculator\obj\Debug\calculator.csprojResolveAssemblyReference.cache
+E:\220953128\Lab_1\calculator\calculator\obj\Debug\calculator.Form1.resources
+E:\220953128\Lab_1\calculator\calculator\obj\Debug\calculator.Properties.Resources.resources
+E:\220953128\Lab_1\calculator\calculator\obj\Debug\calculator.csproj.GenerateResource.Cache
+E:\220953128\Lab_1\calculator\calculator\obj\Debug\calculator.exe
+E:\220953128\Lab_1\calculator\calculator\obj\Debug\calculator.pdb
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\15-01-2024\220953128\Lab_1\calculator\calculator\bin\Debug\calculator.exe.config
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\15-01-2024\220953128\Lab_1\calculator\calculator\bin\Debug\calculator.exe
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\15-01-2024\220953128\Lab_1\calculator\calculator\bin\Debug\calculator.pdb
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\15-01-2024\220953128\Lab_1\calculator\calculator\obj\Debug\calculator.csproj.AssemblyReference.cache
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\15-01-2024\220953128\Lab_1\calculator\calculator\obj\Debug\calculator.Form1.resources
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\15-01-2024\220953128\Lab_1\calculator\calculator\obj\Debug\calculator.Properties.Resources.resources
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\15-01-2024\220953128\Lab_1\calculator\calculator\obj\Debug\calculator.csproj.GenerateResource.cache
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\15-01-2024\220953128\Lab_1\calculator\calculator\obj\Debug\calculator.csproj.CoreCompileInputs.cache
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\15-01-2024\220953128\Lab_1\calculator\calculator\obj\Debug\calculator.exe
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\15-01-2024\220953128\Lab_1\calculator\calculator\obj\Debug\calculator.pdb
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\26-01-2024\220953128\Lab_1\calculator\calculator\bin\Debug\calculator.exe.config
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\26-01-2024\220953128\Lab_1\calculator\calculator\bin\Debug\calculator.exe
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\26-01-2024\220953128\Lab_1\calculator\calculator\bin\Debug\calculator.pdb
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\26-01-2024\220953128\Lab_1\calculator\calculator\obj\Debug\calculator.csproj.AssemblyReference.cache
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\26-01-2024\220953128\Lab_1\calculator\calculator\obj\Debug\calculator.Form1.resources
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\26-01-2024\220953128\Lab_1\calculator\calculator\obj\Debug\calculator.Properties.Resources.resources
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\26-01-2024\220953128\Lab_1\calculator\calculator\obj\Debug\calculator.csproj.GenerateResource.cache
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\26-01-2024\220953128\Lab_1\calculator\calculator\obj\Debug\calculator.csproj.CoreCompileInputs.cache
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\26-01-2024\220953128\Lab_1\calculator\calculator\obj\Debug\calculator.exe
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\26-01-2024\220953128\Lab_1\calculator\calculator\obj\Debug\calculator.pdb

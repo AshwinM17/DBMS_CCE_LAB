@@ -1,0 +1,72 @@
+C:\Users\mitta\source\repos\BankingApplication\BankingApplication\bin\Debug\net8.0-windows\BankingApplication.exe
+C:\Users\mitta\source\repos\BankingApplication\BankingApplication\bin\Debug\net8.0-windows\BankingApplication.deps.json
+C:\Users\mitta\source\repos\BankingApplication\BankingApplication\bin\Debug\net8.0-windows\BankingApplication.runtimeconfig.json
+C:\Users\mitta\source\repos\BankingApplication\BankingApplication\bin\Debug\net8.0-windows\BankingApplication.dll
+C:\Users\mitta\source\repos\BankingApplication\BankingApplication\bin\Debug\net8.0-windows\BankingApplication.pdb
+C:\Users\mitta\source\repos\BankingApplication\BankingApplication\obj\Debug\net8.0-windows\BankingApplication.Form1.resources
+C:\Users\mitta\source\repos\BankingApplication\BankingApplication\obj\Debug\net8.0-windows\BankingApplication.csproj.GenerateResource.cache
+C:\Users\mitta\source\repos\BankingApplication\BankingApplication\obj\Debug\net8.0-windows\BankingApplication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mitta\source\repos\BankingApplication\BankingApplication\obj\Debug\net8.0-windows\BankingApplication.AssemblyInfoInputs.cache
+C:\Users\mitta\source\repos\BankingApplication\BankingApplication\obj\Debug\net8.0-windows\BankingApplication.AssemblyInfo.cs
+C:\Users\mitta\source\repos\BankingApplication\BankingApplication\obj\Debug\net8.0-windows\BankingApplication.csproj.CoreCompileInputs.cache
+C:\Users\mitta\source\repos\BankingApplication\BankingApplication\obj\Debug\net8.0-windows\BankingApplication.dll
+C:\Users\mitta\source\repos\BankingApplication\BankingApplication\obj\Debug\net8.0-windows\refint\BankingApplication.dll
+C:\Users\mitta\source\repos\BankingApplication\BankingApplication\obj\Debug\net8.0-windows\BankingApplication.pdb
+C:\Users\mitta\source\repos\BankingApplication\BankingApplication\obj\Debug\net8.0-windows\BankingApplication.genruntimeconfig.cache
+C:\Users\mitta\source\repos\BankingApplication\BankingApplication\obj\Debug\net8.0-windows\ref\BankingApplication.dll
+C:\Users\mitta\source\repos\BankingApplication\BankingApplication\obj\Debug\net8.0-windows\BankingApplication.Form2.resources
+C:\Users\mitta\source\repos\BankingApplication\BankingApplication\obj\Debug\net8.0-windows\BankingApplication.Form3.resources
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\bin\Debug\net8.0-windows\BankingApplication.exe
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\bin\Debug\net8.0-windows\BankingApplication.deps.json
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\bin\Debug\net8.0-windows\BankingApplication.runtimeconfig.json
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\bin\Debug\net8.0-windows\BankingApplication.dll
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\bin\Debug\net8.0-windows\BankingApplication.pdb
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\obj\Debug\net8.0-windows\BankingApplication.Form1.resources
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\obj\Debug\net8.0-windows\BankingApplication.Form2.resources
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\obj\Debug\net8.0-windows\BankingApplication.Form3.resources
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\obj\Debug\net8.0-windows\BankingApplication.csproj.GenerateResource.cache
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\obj\Debug\net8.0-windows\BankingApplication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\obj\Debug\net8.0-windows\BankingApplication.AssemblyInfoInputs.cache
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\obj\Debug\net8.0-windows\BankingApplication.AssemblyInfo.cs
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\obj\Debug\net8.0-windows\BankingApplication.csproj.CoreCompileInputs.cache
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\obj\Debug\net8.0-windows\BankingApplication.dll
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\obj\Debug\net8.0-windows\refint\BankingApplication.dll
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\obj\Debug\net8.0-windows\BankingApplication.pdb
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\obj\Debug\net8.0-windows\BankingApplication.genruntimeconfig.cache
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\obj\Debug\net8.0-windows\ref\BankingApplication.dll
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\bin\Debug\net8.0-windows\BankingApplication.exe
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\bin\Debug\net8.0-windows\BankingApplication.deps.json
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\bin\Debug\net8.0-windows\BankingApplication.runtimeconfig.json
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\bin\Debug\net8.0-windows\BankingApplication.dll
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\bin\Debug\net8.0-windows\BankingApplication.pdb
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\obj\Debug\net8.0-windows\BankingApplication.Form1.resources
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\obj\Debug\net8.0-windows\BankingApplication.Form2.resources
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\obj\Debug\net8.0-windows\BankingApplication.Form3.resources
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\obj\Debug\net8.0-windows\BankingApplication.csproj.GenerateResource.cache
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\obj\Debug\net8.0-windows\BankingApplication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\obj\Debug\net8.0-windows\BankingApplication.AssemblyInfoInputs.cache
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\obj\Debug\net8.0-windows\BankingApplication.AssemblyInfo.cs
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\obj\Debug\net8.0-windows\BankingApplication.csproj.CoreCompileInputs.cache
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\obj\Debug\net8.0-windows\BankingApplication.dll
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\obj\Debug\net8.0-windows\refint\BankingApplication.dll
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\obj\Debug\net8.0-windows\BankingApplication.pdb
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\obj\Debug\net8.0-windows\BankingApplication.genruntimeconfig.cache
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\obj\Debug\net8.0-windows\ref\BankingApplication.dll
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\bin\Debug\net8.0-windows\BankingApplication.exe
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\bin\Debug\net8.0-windows\BankingApplication.deps.json
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\bin\Debug\net8.0-windows\BankingApplication.runtimeconfig.json
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\bin\Debug\net8.0-windows\BankingApplication.dll
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\bin\Debug\net8.0-windows\BankingApplication.pdb
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\obj\Debug\net8.0-windows\BankingApplication.Form1.resources
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\obj\Debug\net8.0-windows\BankingApplication.Form2.resources
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\obj\Debug\net8.0-windows\BankingApplication.Form3.resources
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\obj\Debug\net8.0-windows\BankingApplication.csproj.GenerateResource.cache
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\obj\Debug\net8.0-windows\BankingApplication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\obj\Debug\net8.0-windows\BankingApplication.AssemblyInfoInputs.cache
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\obj\Debug\net8.0-windows\BankingApplication.AssemblyInfo.cs
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\obj\Debug\net8.0-windows\BankingApplication.csproj.CoreCompileInputs.cache
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\obj\Debug\net8.0-windows\BankingApplication.dll
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\obj\Debug\net8.0-windows\refint\BankingApplication.dll
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\obj\Debug\net8.0-windows\BankingApplication.pdb
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\obj\Debug\net8.0-windows\BankingApplication.genruntimeconfig.cache
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\Lab 1 and 2\Lab_2\BankingApplication\BankingApplication\obj\Debug\net8.0-windows\ref\BankingApplication.dll

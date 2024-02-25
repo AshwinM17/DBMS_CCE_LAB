@@ -1,0 +1,19 @@
+E:\220953128\Lab_1\Registeration_form\Registeration_form\bin\Debug\Registeration_form.exe.config
+E:\220953128\Lab_1\Registeration_form\Registeration_form\bin\Debug\Registeration_form.exe
+E:\220953128\Lab_1\Registeration_form\Registeration_form\bin\Debug\Registeration_form.pdb
+E:\220953128\Lab_1\Registeration_form\Registeration_form\obj\Debug\Registeration_form.csprojResolveAssemblyReference.cache
+E:\220953128\Lab_1\Registeration_form\Registeration_form\obj\Debug\Registeration_form.Form1.resources
+E:\220953128\Lab_1\Registeration_form\Registeration_form\obj\Debug\Registeration_form.Properties.Resources.resources
+E:\220953128\Lab_1\Registeration_form\Registeration_form\obj\Debug\Registeration_form.csproj.GenerateResource.Cache
+E:\220953128\Lab_1\Registeration_form\Registeration_form\obj\Debug\Registeration_form.exe
+E:\220953128\Lab_1\Registeration_form\Registeration_form\obj\Debug\Registeration_form.pdb
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\15-01-2024\220953128\Lab_1\Registeration_form\Registeration_form\bin\Debug\Registeration_form.exe.config
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\15-01-2024\220953128\Lab_1\Registeration_form\Registeration_form\bin\Debug\Registeration_form.exe
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\15-01-2024\220953128\Lab_1\Registeration_form\Registeration_form\bin\Debug\Registeration_form.pdb
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\15-01-2024\220953128\Lab_1\Registeration_form\Registeration_form\obj\Debug\Registeration_form.csproj.AssemblyReference.cache
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\15-01-2024\220953128\Lab_1\Registeration_form\Registeration_form\obj\Debug\Registeration_form.Form1.resources
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\15-01-2024\220953128\Lab_1\Registeration_form\Registeration_form\obj\Debug\Registeration_form.Properties.Resources.resources
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\15-01-2024\220953128\Lab_1\Registeration_form\Registeration_form\obj\Debug\Registeration_form.csproj.GenerateResource.cache
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\15-01-2024\220953128\Lab_1\Registeration_form\Registeration_form\obj\Debug\Registeration_form.csproj.CoreCompileInputs.cache
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\15-01-2024\220953128\Lab_1\Registeration_form\Registeration_form\obj\Debug\Registeration_form.exe
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\DBS lab\15-01-2024\220953128\Lab_1\Registeration_form\Registeration_form\obj\Debug\Registeration_form.pdb

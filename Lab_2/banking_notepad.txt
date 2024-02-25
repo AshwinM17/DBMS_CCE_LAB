@@ -1,0 +1,178 @@
+form1
+namespace BankingApplication
+{
+    public partial class Form1 : Form
+    {
+        private string AcNo = "1234";
+        private string pass = "admin";
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Submit_Click(object sender, EventArgs e)
+        {
+            if (Username.Text == AcNo && Password.Text == pass)
+            {
+                Form2 ob = new Form2(AcNo);
+                this.Hide();
+                ob.Show();
+            }
+            else
+            {
+                MessageBox.Show("Incorrect Account Number or Password");
+            }
+        }
+
+        private void forgot_Click(object sender, EventArgs e)
+        {
+            textBox1.Visible = true;
+            Changepass.Visible = true;
+
+
+        }
+
+        private void Changepass_Click(object sender, EventArgs e)
+        {
+            pass = textBox1.Text;
+        }
+    }
+}
+
+
+
+
+form2
+
+
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace BankingApplication
+{
+    public partial class Form2 : Form
+    {
+        Form3 ob;
+        public string[] transaction = new string[5];
+        public string AcNo;
+        public double balance = 10000000;
+        DateTime lastAccess = DateTime.Now;
+        public Form2(string AcNo)
+        {
+            this.AcNo = AcNo;
+            InitializeComponent();
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            nameLabel.Text ="Ashwin Mittal";
+            balancelabel.Text = "$" + balance.ToString();
+            accessLabel.Text = lastAccess.ToString();
+            transLabel.Text = "$0";
+            ob = new Form3(this);
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void transbutton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ob.Show();
+        }
+        public void updateTransaction()
+        {
+            string transactionString = string.Empty;
+            for (int i = 0; i < transaction.Length; i++)
+            {
+                transactionString += transaction[i] + "\n";
+            }
+            transLabel.Text = transactionString;
+            balancelabel.Text = "$" + balance.ToString();
+        }
+    }
+}
+
+
+
+
+form3
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace BankingApplication
+{
+    public partial class Form3 : Form
+    {
+        Form2 obj;
+        public Form3(Form2 obj)
+        {
+            this.obj = obj;
+            InitializeComponent();
+        }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
+        }
+        private void updateTransaction(double currentTransaction)
+        {
+            for (int i = obj.transaction.Length - 1; i > 0; i--)
+            {
+                obj.transaction[i] = obj.transaction[i - 1];
+            }
+            obj.transaction[0] = "Deposited $" + currentTransaction.ToString()+" to " +Benificiary.Text;
+            obj.balance = obj.balance - currentTransaction;
+        }
+
+        private void Details_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            obj.Show();
+        }
+
+        private void payButton_Click(object sender, EventArgs e)
+        {
+            double currentTransaction;
+            Double.TryParse(amount.Text, out currentTransaction);
+            if (obj.balance - currentTransaction > 0)
+            {
+                updateTransaction(currentTransaction);
+                obj.updateTransaction();
+                MessageBox.Show("Transaction Successful");
+            }
+            else
+            {
+                MessageBox.Show("Insufficient Balance");
+            }
+            Benificiary.Text = string.Empty;
+            amount.Text = string.Empty;
+        }
+    }
+}
