@@ -260,8 +260,8 @@ select regno,count(distinct dept)
 from enroll natural join course
 group by regno;
 SQL> select regno,count(distinct dept)
-  2  from enroll natural join course
-  3  group by regno;
+    from enroll natural join course
+    group by regno;
 
 REGNO                COUNT(DISTINCTDEPT)
 -------------------- -------------------
