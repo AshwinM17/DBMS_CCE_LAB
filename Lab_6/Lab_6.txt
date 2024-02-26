@@ -40,8 +40,8 @@ return total;
 end;
 /
 
-select total_accd(2019) from dual;
-TOTAL_ACCD(2019)
+select total_accd(2024) from dual;
+TOTAL_ACCD(2024)
 ----------------
                2
 
@@ -58,9 +58,9 @@ dbms_output.put_line('Total damage:'|| damage);
 end;
 /
 
-execute tot_damage('MT739023',2019);
+execute tot_damage('1236',2024);
 
-Total damage:100900
+Total damage:150
 
 PL/SQL procedure successfully completed.
 

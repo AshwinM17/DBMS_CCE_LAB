@@ -1,8 +1,58 @@
-Write a procedure which inserts Driver information into table T1,if the total damage amount nof that driver exceeds rupees 50,000.
-Q2)create a procedure to store accident details into diffrent tables based on accident location information,make use of cursor concept.(can keep 3-4 locations as filter)
-Q3)Generate a trigger intimating the driver regarding the accident if the number of accidents by the driver reaches the count of 3.
-//above 3 for program check not in record.
+-- Extra questions given by sir.
+-- For program check but not for record check...
+-- Q1. Write a procedure which inserts driver information into table T1 if, the total damage amount of driver exceeds rupees 50000. (If multiple damage amount then add them)
+
+-- Q2. Create a procedure to store accident details into different tables based on accident location information, make use of cursor concept. 
+
+-- Q3. Generate a trigger intimating the driver regarding the accidents if the number of accidents by the driver reaches the count of 3.
+
+-------------------------------------------------------------------
+
+-- Q4. Write a PL-SQL function to withdraw money from bank account.
+
+-- Q5. Create a procedure to display 20% discount amount on each order, provided, the order has atleast five items.
 
 
-Q4)Write a PLSQL function to withdraw money from a bank account.
-Q5)Create a procedure to display 20% discount amount on each order,provided the order has atleast 5 items.
+
+create or replace procedure insert_driver_info(driver_id_param varchar, total_damage_threshold number) as total_damage number;
+begin
+select nvl(sum(damage_amount), 0) into total_damage
+from participated
+where driver_id = driver_id_param;
+
+if total_damage > total_damage_threshold then
+insert into t1 (driver_id, total_damage) values (driver_id_param, total_damage);
+end if;
+end;
+/
+
+
+create or replace procedure store_accident_details as
+cursor accident_cursor is
+select report_number, accd_date, location
+from accident;
+begin
+for accident_rec in accident_cursor loop
+insert into accident_details_table (report_number, accd_date, location)
+values (accident_rec.report_number, accident_rec.accd_date, accident_rec.location);
+end loop;
+end;
+/
+
+
+create or replace trigger notify_driver_accidents
+after insert on participated
+for each row
+declare
+accident_count number;
+begin
+select count(*)
+into accident_count
+from participated
+where driver_id = :new.driver_id;
+if accident_count = 3 then
+dbms_output.put_line('driver ' || :new.driver_id || ' has reached 3 accidents.');
+end if;
+end;
+/
+
