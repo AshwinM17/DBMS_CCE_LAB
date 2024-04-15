@@ -1,3 +1,0 @@
-update text
-    set publisher='U-Like'
-    where publisher='Cengage';

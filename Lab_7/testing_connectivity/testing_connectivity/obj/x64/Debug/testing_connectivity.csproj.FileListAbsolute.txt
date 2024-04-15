@@ -1,0 +1,13 @@
+E:\VC#\Lab_7\testing_connectivity\testing_connectivity\bin\x64\Debug\testing_connectivity.exe.config
+E:\VC#\Lab_7\testing_connectivity\testing_connectivity\obj\x64\Debug\testing_connectivity.exe
+E:\VC#\Lab_7\testing_connectivity\testing_connectivity\obj\x64\Debug\testing_connectivity.pdb
+E:\VC#\Lab_7\testing_connectivity\testing_connectivity\obj\x64\Debug\testing_connectivity.csprojResolveAssemblyReference.cache
+E:\VC#\Lab_7\testing_connectivity\testing_connectivity\obj\x64\Debug\testing_connectivity.Form1.resources
+E:\VC#\Lab_7\testing_connectivity\testing_connectivity\obj\x64\Debug\testing_connectivity.Properties.Resources.resources
+E:\VC#\Lab_7\testing_connectivity\testing_connectivity\obj\x64\Debug\testing_connectivity.csproj.GenerateResource.Cache
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\VC#\Lab_7\testing_connectivity\testing_connectivity\bin\x64\Debug\testing_connectivity.exe.config
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\VC#\Lab_7\testing_connectivity\testing_connectivity\obj\x64\Debug\testing_connectivity.exe
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\VC#\Lab_7\testing_connectivity\testing_connectivity\obj\x64\Debug\testing_connectivity.csprojResolveAssemblyReference.cache
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\VC#\Lab_7\testing_connectivity\testing_connectivity\obj\x64\Debug\testing_connectivity.Form1.resources
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\VC#\Lab_7\testing_connectivity\testing_connectivity\obj\x64\Debug\testing_connectivity.Properties.Resources.resources
+C:\Users\mitta\Desktop\Ashwin\College\Sem_4\DBMS\VC#\Lab_7\testing_connectivity\testing_connectivity\obj\x64\Debug\testing_connectivity.csproj.GenerateResource.Cache

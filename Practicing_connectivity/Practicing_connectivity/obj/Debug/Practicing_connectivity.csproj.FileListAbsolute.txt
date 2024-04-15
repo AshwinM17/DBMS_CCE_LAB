@@ -1,0 +1,10 @@
+E:\VC#\Practicing_connectivity\Practicing_connectivity\bin\Debug\Practicing_connectivity.exe.config
+E:\VC#\Practicing_connectivity\Practicing_connectivity\bin\Debug\Practicing_connectivity.exe
+E:\VC#\Practicing_connectivity\Practicing_connectivity\bin\Debug\Practicing_connectivity.pdb
+E:\VC#\Practicing_connectivity\Practicing_connectivity\bin\Debug\Oracle.DataAccess.dll
+E:\VC#\Practicing_connectivity\Practicing_connectivity\obj\Debug\Practicing_connectivity.csprojResolveAssemblyReference.cache
+E:\VC#\Practicing_connectivity\Practicing_connectivity\obj\Debug\Practicing_connectivity.Form1.resources
+E:\VC#\Practicing_connectivity\Practicing_connectivity\obj\Debug\Practicing_connectivity.Properties.Resources.resources
+E:\VC#\Practicing_connectivity\Practicing_connectivity\obj\Debug\Practicing_connectivity.csproj.GenerateResource.Cache
+E:\VC#\Practicing_connectivity\Practicing_connectivity\obj\Debug\Practicing_connectivity.exe
+E:\VC#\Practicing_connectivity\Practicing_connectivity\obj\Debug\Practicing_connectivity.pdb
